@@ -2,7 +2,7 @@
 *Jacob Green*  
 
 The work of [Ryan Abernathy](https://github.com/earthcube2020/ec20_abernathey_etal) is expanded upon in this repository,  
-aiming to benchmark cloud storage read throughput of file types essential to Machine Learning and Geospatial Weather applications.  
+aiming to benchmark cloud storage read throughput of file types essential to Machine Learning, Geospatial, & Weather applications.  
 As the need for on-demand retrival from cloud-based stores increases, documenting the access speeds of widely-used file types is more  
 important than ever before. By using Dask, a pythonic parallel computation library, we can measure the strenths, limitations, and  
 overall performance of parallel reads from the cloud.  
