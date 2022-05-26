@@ -8,4 +8,6 @@ The goals of this benchmarking are:
 are widely used in all industries.
 - Comparing these classic file formats with the read throughput of their cloud native counterparts: AVRO, ORC, Parquet, TileDB Embedded, and Zarr
 - Analyzing any gains or drops in read performance when partitioning big data into subfiles. This goal is partiularly important because it will 
-set a precendent on the optimal amount of preprocessing a data set will need before it can be accessed from cloud storage.
+set a precendent on the optimal amount of preprocessing a data set will need before it can be accessed from cloud storage.  
+
+This project is still under development, so the number of parallel reads cannot be scaled up past the maximum that a local cluster allows until the main notebook has been tested and approved.
