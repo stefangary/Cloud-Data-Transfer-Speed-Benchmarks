@@ -7,6 +7,9 @@ The goals of this benchmarking are:
 - Measuring read throughput for CSV, NetCDF, and grib2 data formats. These are file types that many are familiar with, and to this day are widely used in all industries.
 - Comparing these classic file formats with the read throughput of their cloud native counterparts: AVRO, ORC, Parquet, TileDB Embedded, and Zarr
 - Analyzing any gains or drops in read performance when partitioning big data into subfiles. This goal is partiularly important because it will 
-set a precendent on the optimal amount of preprocessing a data set will need before it can be accessed from cloud storage.  
+set a precendent on the optimal amount of preprocessing a data set will need before it can be accessed from cloud storage.
+- Testing different clouds and how much they alter read speed performance, as well as a storage & egress costs estimates for data transfer around the world.
 
-This project is still under development, so the number of parallel reads cannot be scaled up past the maximum that a local cluster allows until the main notebook has been tested and approved.
+This project is still under development, so the scope and other details are subject to change.
+
+
