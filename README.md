@@ -14,3 +14,14 @@ set a precendent on the optimal amount of preprocessing a data set will need bef
 Another focus of this project is to allow users to input their own files into the throughput measurement Jupyter notebook to measure read performance using a local cluster. A distributed cluster of machines may not be easily accessable in many cases, so it is important to be able to measure the capability of a single node to read data in parallel. Through testing using their own hardware & data set(s), users will be able to determine the best file format and amount of parallel reads required for maximum speedup on a given cloud storage provider. Options setting the extent of testing to be done are included in the notebook, so the user has a fair amount of flexibility in how detailed they want the results to be. Editing the code to operate on a distributed cluster is also realtively straightforward, so tests can be performed in any context the user wishes.
 
 This project is still under development, so the scope and other details are subject to change.
+
+## Required Libraries Installation Instructions:
+To run the `transferSpeeds.ipynb` Jupyter Notebook, the following commands will need to be run on a new or existing conda environment:
+- `conda install dask -c conda-forge`
+- `conda install -c conda-forge xarray dask netCDF4 bottleneck`
+- `conda install -c conda-forge intake-xarray`
+- `conda install -c conda-forge matplotlib`
+- `conda install -c anaconda scipy`
+- `conda install -c conda-forge gcsfs`
+- `conda install -c conda-forge pyarrow` **OR** `conda install -c conda-forge fastparquet`
+- `conda install -c conda-forge h5netcdf`
