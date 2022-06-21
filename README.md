@@ -11,7 +11,7 @@ set a precendent on the optimal amount of preprocessing a data set will need bef
 - Testing different clouds and how much they alter read speed performance
 - Calculating an estimate of storage & egress costs for the same data across different clouds. Keep in mind that the cost estimate will only be for the data tested in this project, but should give a solid basis for price differences between each cloud.
 
-Another focus of this project is to allow users to input their own files into the throughput measurement Jupyter notebook to measure read performance using a local cluster. A distributed cluster of machines may not be easily accessable in many cases, so it is important to be able to measure the capability of a single node to read data in parallel. Through testing using their own hardware & data set(s), users will be able to determine the best file format and amount of parallel reads required for maximum speedup on a given cloud storage provider. Options setting the extent of testing to be done are included in the notebook, so the user has a fair amount of flexibility in how detailed they want the results to be. Editing the code to operate on a distributed cluster is also realtively straightforward, so tests can be performed in any context the user wishes.
+Another focus of this project is to allow users to input their own files into the throughput measurement Jupyter notebook to measure read performance using a local cluster. A distributed cluster of machines may not be easily accessable in many cases, so it is important to be able to measure the capability of a single node to read data in parallel. Through testing using their own hardware & data set(s), users will be able to determine the best file format and amount of parallel reads required for maximum speedup on a given cloud storage provider. Options setting the extent of testing to be done are included in the notebook, so the user has a fair amount of flexibility in how detailed they want the results to be. Editing the code to operate on a distributed cluster is also relatively straightforward, so tests can be performed in any context the user wishes.
 
 This project is still under development, so the scope and other details are subject to change.
 
@@ -25,3 +25,5 @@ To run the `transferSpeeds.ipynb` Jupyter Notebook, the following commands will 
 - `conda install -c conda-forge gcsfs`
 - `conda install -c conda-forge pyarrow` **OR** `conda install -c conda-forge fastparquet`
 - `conda install -c conda-forge h5netcdf`
+
+I found this to be the most simple way to run the notebook, but users can choose to install the libraries with whatever method they wish.
