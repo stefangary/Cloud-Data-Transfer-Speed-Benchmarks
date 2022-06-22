@@ -18,7 +18,7 @@ This project is still under development, so the scope and other details are subj
 ## Required Libraries Installation Instructions:
 To run the `transferSpeeds.ipynb` Jupyter Notebook, the following commands will need to be run on a new or existing conda environment:
 - `conda install dask -c conda-forge`
-- `conda install -c conda-forge xarray dask netCDF4 bottleneck`
+- `conda install -c conda-forge xarray netCDF4 bottleneck`
 - `conda install -c conda-forge intake-xarray`
 - `conda install -c conda-forge matplotlib`
 - `conda install -c anaconda scipy`
